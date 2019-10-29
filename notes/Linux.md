@@ -3,7 +3,7 @@
         - [ln](#lnlink链接文件)
         - [ls](#ls)
         - [mkdir](#mkdir)
-        - [rmdir](#rmdirremove-enpty-directory)
+        - [rmdir](#rmdirremove-empty-directory)
         - [rm](#rm)
         - [cd](#cdchange-directory)
         - [touch](#touch)
