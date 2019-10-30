@@ -1,6 +1,9 @@
 - [常用命令](#常用命令)
     - [文件相关](#文件相关)
         - [输入输出重定向](#输入输出重定向)
+        - [打包与压缩](#打包与压缩)
+            - [打包与解包](#打包与解包)
+            - [压缩与解压缩](#压缩与解压缩)
 
 |[ln](#lnlink链接文件)|[ls](#ls)|[mkdir](#mkdir)|[rmdir](#rmdirremove-empty-directory)|[rm](#rm)|[cd](#cdchange-directory)|[touch](#touch)|[pwd](#pwdprint-working-directory)|[cp](#cp)|[mv](#mv)|[cat](#cat)|[more](#more)|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -298,6 +301,53 @@
     # awk '{array[$1]++}END{for(i in array) print i "\t" array[i]}'：统计每一列出现的次数
 
 - - -
+### 打包与压缩
+
+tar与gzip、tar与bzip2
+
+    # tar -zcvf target.tar.gz source：打包文件或目录并压缩成.gz文件。多个源文件使用空格分开
+    # tar -zxvf target.tar.gz [-C path]：解压缩.gz文件并解包
+    -C path：指定解包后的文件路径，参数必须放在目标文件后
+
+    # tar -jcvf target.tar.bz2 source：打包文件或目录并压缩成.bz2文件。多个源文件使用空格分开
+    # tar -jxvf target.tar.bz2：解压缩.bz2文件并解包
+
+#### 打包与解包
+
+tar
+
+    # tar [-cvfxt] target source
+    -c：打包文件
+    -v：显示过程
+    -f：指定打包后的文件名
+    -x：解包
+    -t：查看包中的内容
+
+#### 压缩与解压缩
+
+常用的压缩文件格式有zip、bzip2、gzip等。
+
+    # zip [-r] newfile.zip source：自动生成.zip结尾的压缩文件
+    -r：压缩目录
+    # unzip target.zip：解压缩.zip文件
+
+    # bzip2 [-kd] target：压缩文件，生成.bz2结尾的压缩文件，不保留源文件
+    -k：保留源文件
+    -d：解压缩文件
+    # bunzip2 [-k] target.bz2：解压缩bz2文件
+    -k：保留压缩文件
+    * bzip2不能压缩目录
+
+    # gzip [-crd] target：压缩文件并生成一个.gz结尾的文件，不保留源文件
+    -c：把压缩结果输出到标准控制台，不会影响源文件。 gzip -c source > target.gz
+    -r：压缩目录下的所有子文件，不能压缩目录
+    -d：解压缩文件
+    # gunzip [-r] target.gz：解压缩文件
+    -r：解压缩目录下的所有压缩文件
+
+
+
+
 
 
 
