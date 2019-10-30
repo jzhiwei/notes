@@ -1,27 +1,10 @@
 - [常用命令](#常用命令)
     - [文件相关](#文件相关)
-        - [ln](#lnlink链接文件)
-        - [ls](#ls)
-        - [mkdir](#mkdir)
-        - [rmdir](#rmdirremove-empty-directory)
-        - [rm](#rm)
-        - [cd](#cdchange-directory)
-        - [touch](#touch)
-        - [pwd](#pwdprint-working-directory)
-        - [cp](#cp)
-        - [mv](#mv)
-        - [cat](#cat)
-        - [more](#more)
-        - [less](#less)
-        - [echo](#echo)
-        - [file](#file)
-        - [wc](#wc)
         - [输入输出重定向](#输入输出重定向)
-        - [grep](#grep)
-        - [locate](#locate)
-        - [find](#find)
-        - [sed](#sedstream-editor)
-        - [awk](#awk)
+
+|[ln](#lnlink链接文件)|[ls](#ls)|[mkdir](#mkdir)|[rmdir](#rmdirremove-empty-directory)|[rm](#rm)|[cd](#cdchange-directory)|[touch](#touch)|[pwd](#pwdprint-working-directory)|[cp](#cp)|[mv](#mv)|[cat](#cat)|[more](#more)|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|[less](#less)|[echo](#echo)|[file](#file)|[wc](#wc)|[grep](#grep)|[locate](#locate)|[find](#find)|[sed](#sedstream-editor)|[awk](#awk)|
 
 # 常用命令
 
