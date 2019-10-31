@@ -14,8 +14,8 @@
 |[less](#less)|[echo](#echo)|[file](#file)|[wc](#wc)|[grep](#grep)|[locate](#locate)|[find](#find)|[sed](#sedstream-editor)|[awk](#awk)|
 
 ### 用户与组相关命令
-|[id](#id)|[whoami](#whoami-whoami)|[who](#who)|[last](#last-lastlog)|[w](#w)|[su](#su)|[logout](#logout)|[exit](#exit)| |  | | |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|[id](#id)|[whoami](#whoami---who-am-i)|[who](#who)|[last](#last---lastlog)|[w](#w)|[su](#su)|[logout](#logout)|[exit](#exit)|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 
 
 
