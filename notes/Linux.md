@@ -12,6 +12,9 @@
         - [chown](#chown)
         - [chgrp](#chgrp)
         - [默认权限](#默认权限)
+    - [网络相关](#网络相关)
+    - [防火墙](#防火墙)
+
 - - -
 ### 文件相关命令
 |[ln](#lnlink链接文件)|[ls](#ls)|[mkdir](#mkdir)|[rmdir](#rmdirremove-empty-directory)|[rm](#rm)|[cd](#cdchange-directory)|[touch](#touch)|[pwd](#pwdprint-working-directory)|[cp](#cp)|[mv](#mv)|[cat](#cat)|[more](#more)|
