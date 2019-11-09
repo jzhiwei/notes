@@ -13,6 +13,10 @@
         - [chgrp](#chgrp)
         - [默认权限](#默认权限)
     - [网络相关](#网络相关)
+        - [网络配置](#网络配置)
+            - [网卡配置](#网卡配置)
+            - [主机名配置](#主机名配置)
+            - [DNS配置](#DNS配置)
     - [防火墙](#防火墙)
 
 - - -
@@ -25,6 +29,9 @@
 |[id](#id)|[whoami](#whoami---who-am-i)|[who](#who)|[last](#last---lastlog)|[w](#w)|[su](#su)|[logout](#logout)|[exit](#exit)|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 
+### 网络相关命令
+|[ifconfig](#ifconfig)|[ifup](#ifup)|[ifdown](#ifdown)|[netstat](#netstat)|[nslookup](#nslookup)|[traceroute](#traceroute)|[wget](#wget)|[tcpdump](#tcpdump)|[ssh](#ssh)|[scp](#scp)|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 
 
 
@@ -633,18 +640,30 @@ drwxrw-r--. 5 mac root 4096  May  6 08:43  http
 /etc/sysconfig/network-scripts/ifcfg-eth0
 
     DEVICE=eth0 -> 网卡设备名
+
     BOOTPROTO=none -> 是否自动获取IP(none、static、dhcp)
+
     HWADDR=00:0c:29:17:c4:09 -> MAC地址
+
     NM_CONTROLLED=yes -> 是否可以由Network Manager图形管理工具托管
+
     ONBOOT=yes -> 是否随网络服务启动
+
     TYPE=Ethernet -> 网络类型为以太网
+
     UUID="44b76c8a-b59f-445d-83fa-7f98fda86b3d" -> 唯一识别码
-        如果UUID冲突，删除网卡信息文件中的MAC地址行，然后删除/etc/udev/rules.d/70-persistent-net.rules网卡和MAC地址绑定文件
+    如果UUID冲突，删除网卡信息文件中的MAC地址行，然后删除/etc/udev/rules.d/70-persistent-net.rules网卡和MAC地址绑定文件
+
     IPADDR=192.168.1.100 -> IP地址
+
     NETMASK=255.255.255.0 -> 子网掩码
+
     GATEWAY=192.168.1.1 -> 网关地址
+
     DNS1=202.106.0.20 -> DNS地址
+
     IPV6INIT=no -> IPv6没有启用
+
     USERCTL=no -> 不允许非root用户控制此网卡
 
 #### 主机名配置
