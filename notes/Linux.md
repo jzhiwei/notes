@@ -546,4 +546,130 @@ drwxrw-r--. 5 mac root 4096  May  6 08:43  http
     --------------------
         rwx r-x r-x
 
+- - - 
+## 网络相关
+
+### ifconfig
+
+    查看网络状态
+
+    # ifconfig eth0 192.168.1.100
+    netmask 255.255.255.0: 临时设置网卡IP地址和子网掩码
+- - - 
+### ifup 
+
+    # ifup 网卡设别名: 启用网卡
+### ifdown 
+
+    # ifdown 网卡设备名: 禁用网卡
+- - - 
+### netstat 
+
+    # netstat [-tunla][-rn]
+    -t: 列出TCP协议端口
+    -u: 列出UDP协议端口
+    -n: 不使用域名和服务名，而使用IP和端口号
+    -l: 仅列出监听状态的网络服务
+    -a: 列出所有网络连接
+    -rn = route -n: 显示路由信息
+- - -
+### nslookup
+
+查询DNS、解析IP或域名
+
+    # nslookup
+    输入server，查询本地DNS，输入exit退出
+    输入域名查询指定域名DNS解析结果
+
+- - -
+### traceroute
+
+跟踪路由信息
+
+    # traceroute 域名|IP
+- - -
+### wget
+
+根据链接下载软件包
+
+    # wget URL
+
+- - -
+### tcpdump
+
+抓包命令
+
+    # tcpdump -i eth0 -nnX port 21
+    -i: 指定网卡接口
+    -nn: 将数据包中的域名转成IP和端口
+    -X: 以十六进制和ASCII码显示数据包内容
+    port: 监听端口
+
+- - -
+### ssh
+
+连接远程服务器
+
+    # ssh user@host
+- - -
+### scp
+
+上传或下载文件到远程服务器
+
+    # scp [-r] user@host:remote_file local_path
+    从远程服务器下载文件到本地
+    
+    # scp [-r] local_file user@host:remote_path
+    上传本地文件到远程服务器
+
+    -r: 操作目录
+
+- - -
+
+### 网络配置
+
+#### 网卡配置
+
+/etc/sysconfig/network-scripts/ifcfg-eth0
+
+    DEVICE=eth0 -> 网卡设备名
+    BOOTPROTO=none -> 是否自动获取IP(none、static、dhcp)
+    HWADDR=00:0c:29:17:c4:09 -> MAC地址
+    NM_CONTROLLED=yes -> 是否可以由Network Manager图形管理工具托管
+    ONBOOT=yes -> 是否随网络服务启动
+    TYPE=Ethernet -> 网络类型为以太网
+    UUID="44b76c8a-b59f-445d-83fa-7f98fda86b3d" -> 唯一识别码
+        如果UUID冲突，删除网卡信息文件中的MAC地址行，然后删除/etc/udev/rules.d/70-persistent-net.rules网卡和MAC地址绑定文件
+    IPADDR=192.168.1.100 -> IP地址
+    NETMASK=255.255.255.0 -> 子网掩码
+    GATEWAY=192.168.1.1 -> 网关地址
+    DNS1=202.106.0.20 -> DNS地址
+    IPV6INIT=no -> IPv6没有启用
+    USERCTL=no -> 不允许非root用户控制此网卡
+
+#### 主机名配置
+
+/etc/sysconfig/network
+
+    # hostname: 查看和配置临时主机名
+
+#### DNS配置
+
+/etc/resolv.conf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
