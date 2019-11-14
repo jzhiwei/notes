@@ -215,46 +215,46 @@
 
 L = [start_index : end_index : step]
 
-    ```
-    L = ['Adam','Lisa','Bart','Paul'] 
-    
-    L[0:3] = L[:3] => ['Adam','Lisa','Bart']
+```
+L = ['Adam','Lisa','Bart','Paul'] 
 
-    L[1:3] => ['Adam','Lisa','Bart']
+L[0:3] = L[:3] => ['Adam','Lisa','Bart']
 
-    L[:] => ['Adam','Lisa','Bart','Paul']
+L[1:3] => ['Adam','Lisa','Bart']
 
-    L[::2] => ['Adam','Bart']
+L[:] => ['Adam','Lisa','Bart','Paul']
 
-    L[-2:] => ['Bart','Paul']
+L[::2] => ['Adam','Bart']
 
-    L[:-2] => ['Adam','Lisa']
+L[-2:] => ['Bart','Paul']
 
-    L[-3:-1] => ['Lisa','Bart']
+L[:-2] => ['Adam','Lisa']
 
-    L[-4,-1,2] => ['Adam','Bart']
-    ```
+L[-3:-1] => ['Lisa','Bart']
+
+L[-4,-1,2] => ['Adam','Bart']
+```
 #### zip()
 
 把两个序列合并成一个由元组组成的list
 
-    ```
-    L = zip([10,20,30],['A','B','C'])
-    print L => [(10,'A'),(20,'B'),(30,'C')]
-    ```
+```
+L = zip([10,20,30],['A','B','C'])
+print L => [(10,'A'),(20,'B'),(30,'C')]
+```
     
 #### enumerate()
 
 取索引函数，可以使用zip() + range()实现类似效果
 
-    ```
-    L = ['Adam','Lisa','Bart'] 
-    for index,name in enumerate(L):
-        print index, '-', name
-    0 - Adam
-    1 - Lisa
-    2 - Bart
-    ```
+```
+L = ['Adam','Lisa','Bart'] 
+for index,name in enumerate(L):
+    print index, '-', name
+0 - Adam
+1 - Lisa
+2 - Bart
+```
 - - -
 
 ### 无序
