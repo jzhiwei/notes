@@ -213,7 +213,7 @@
 - - -
 #### 切片
 
-    L = [start_index : end_index : step]
+L = [start_index : end_index : step]
 
     ```
     L = ['Adam','Lisa','Bart','Paul'] 
@@ -236,14 +236,17 @@
     ```
 #### zip()
 
-    把两个序列合并成一个由元组组成的list
+把两个序列合并成一个由元组组成的list
+
     ```
     L = zip([10,20,30],['A','B','C'])
     print L => [(10,'A'),(20,'B'),(30,'C')]
     ```
+    
 #### enumerate()
 
-    取索引函数，可以使用zip() + range()实现类似效果
+取索引函数，可以使用zip() + range()实现类似效果
+
     ```
     L = ['Adam','Lisa','Bart'] 
     for index,name in enumerate(L):
