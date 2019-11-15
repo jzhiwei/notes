@@ -18,6 +18,26 @@
     - [无序](#无序)
         - [set](#集合set)
         - [dict](#字典dict)
+- [控制流程语句](#控制流程语句)
+    - [if-else](#if-else)
+    - [for](#for)
+    - [while](#while)
+- [包和模块](#包和模块)
+- [函数](#函数)
+    - [定义](#定义)
+    - [返回值](#返回值)
+    - [参数](#参数)
+    - [高阶函数](#高阶函数)
+    - [匿名函数](#匿名函数)
+    - [装饰器](#装饰器)
+- [类](#类)
+    - [变量](#变量)
+    - [方法](#方法)
+    - [继承](#类的继承)
+    - [获取实例信息](#获取实例信息)
+    - [定制类](#定制类)
+- [正则表达式](#正则表达式)
+    - [概括字符集](#概括字符集)
 
 ## 基本数据类型
 
@@ -341,3 +361,465 @@ for index,name in enumerate(L):
 - iteritems()
 
     在迭代过程中不断给出tuple，不占用额外内存
+
+- - -
+## 控制流程语句
+
+### if-else
+
+```
+age = 20
+if age >= 18:
+    print 'adult'
+elif age >= 13:
+    print 'teenager'
+else
+    print 'kid'
+```
+### for
+```
+L = ['Adam','Bart','Lisa']
+for name in L:
+    print name
+```
+### while
+```
+while x < 100:
+    print x
+    x = x+1
+```
+- - -
+## 包和模块
+
+### 包
+
+- 包中必须包含文件__init__.py，该文件的模块名就是包名，导入包时模块会自动执行
+
+### 模块
+
+- 使用import关键字导入模块
+- 使用as关键字为模块起别名
+- 使用from import导入指定的模块、变量或函数
+    ```
+    from math import pow,sin,log
+    ```
+- - -
+## 函数
+### 定义
+- 使用def关键字定义，函数名推荐小写字母+下划线
+    ```
+    def my_abs(x):
+        if x>=0:
+            return x
+        else:
+            return -x
+    ```
+### 返回值
+- 函数默认返回值是None。return None = return
+- 如果返回值有多个，则返回一个tuple
+
+    ```
+    import math
+    def move(x, y, step, angle):
+        nx = x + step * math.cos(angle)
+        ny = x + step * math.sin(angle)
+        return nx, ny
+
+    x, y = move(100,100,60,math.pi / 6)
+    print x, y => 151.961524227    70.0
+    
+    r = move(100,100,60,math.pi / 6)
+    print r => (151.961524227, 70.0)
+    
+    ```
+### 参数
+- 关键字参数
+
+    可以不按形参的顺序传递，按照形参名=值的格式传递。
+
+    关键字参数必须在实际必传参数的后面
+
+- 默认参数
+
+    可以为形参指定默认值
+
+    默认参数必须在必传参数的后面
+
+    ```
+    def greet(content='world'):
+        print 'hello,' + content
+    
+    greet() => hello,world
+    greet('python') => hello,python
+    ```
+- 可变参数
+
+    可以传0个或多个参数
+
+    ```
+    def fn(*args):
+        print args
+
+    fn() => ()
+    fn('a','b') => ('a','b')
+    ```
+### 高阶函数
+- map()
+- reduce
+- filter
+
+### 匿名函数
+
+- 使用lambda关键字定义匿名函数
+- 匿名函数的函数体只能有一个表达式
+- 不需要return语句返回
+- 冒号前面表示参数，冒号后面表示函数表达体
+
+    ```
+    L = map(lambda x: x*x, [1,2,3])
+    print L => [1,4,9]
+    ```
+    
+    ```
+    L = sorted([1,3,9,5,0],lambda x,y : -cmp(x,y))
+    print L => [9,5,3,1,0]
+    # cmp()比较函数
+    ```
+    ```
+    my_abs = lambda x : -x if x < 0 else x
+    print my_abs(-1) => 1
+    print my_abs(1) => 1
+    # 三元运算 [on_true] if [expression] else [on_false]
+    ```
+- - -
+### 装饰器
+
+    在运行时动态增加函数功能并且不修改函数本身
+
+自定义装饰器函数
+```
+def fn(x):  #自定义函数
+    return x
+
+def decorator(f):   #定义装饰器函数
+    def wrapper(x):
+        ...     #要扩展的功能，例如打印日志
+        return f(x)     #调用原函数并返回结果
+    return wrapper
+
+#调用方式一
+f = decorator(fn)
+f(x)
+
+#调用方式二 - 覆盖原函数。python内置的装饰器注解使用该方式
+fn = decorator(fn)
+fn(x)
+#等价于
+@decorator()
+
+```
+带参数的装饰器函数
+```
+import time
+
+def performance(unit):      #最外层函数，传递自定义的单位
+    def decorator(f):       #装饰器函数
+        def wrapper(*args,**kw):    
+            start_time = time.time()
+            result = f(*args,**kw)  #调用原函数
+            end_time = time.time()
+            #打印函数执行时间和函数名
+            print 'call %s() time %f%s' % (f.__name__,(end_time - start_time),unit)
+            return result   #返回原函数结果
+        return wrapper
+    return decorator
+
+@performance('ms')  #调用最外层函数，传递unit值
+def factorial(n):
+    return reduce(lambda x,y : x*y, range(1,n+1))
+
+factorial(10)
+#等价于
+f = performance('ms')
+factorial = f(factorial)
+factorial(10)
+```
+#### functools.wraps
+
+    复制原函数的必要属性。因为使用装饰器会改变原函数的__name__和__doc__等属性
+
+```
+import time, functools
+
+def performance(unit):
+    def perf_decorator(f):
+        @functools.wraps(f)
+        def wrapper(*args,**kw):
+            t1 = time.time()
+            result = f(*args,**kw)
+            t2 = time.time()
+            print 'call %s() time %f%s' % (f.__name__,t2-t1,unit)
+            return result
+        return wrapper
+    return perf_decorator
+
+@performance('ms')
+def factorial(n):
+    return reduce(lambda x,y: x*y, range(1, n+1))
+
+print factorial.__name__ => factorial
+```
+#### functools.partial
+
+    偏函数
+
+```
+import functools
+
+# 修改sorted函数的行为，生成新函数
+# 方式1
+sorted_ignore_case = functools.partial(sorted,key=str.lower)
+
+# 方式2
+sorted_ignore_case = functools.partial(sorted,cmp=lambda x,y: cmp(x.lower(),y.lower()))
+
+print sorted_ignore_case(['bob', 'about', 'Zoo', 'Credit'])
+
+=> ['about', 'bob', 'Credit', 'Zoo']
+```
+- - -
+## 类
+
+    使用class关键字定义
+
+### 变量
+
+变量前面使用__表示为私有属性，外部访问不到
+
+- 类变量
+
+    定义在类中
+
+- 实例变量
+
+    定义在构造函数中
+
+### 方法
+
+- 构造方法
+
+    使用__init__(self)定义
+
+    第一个参数必须是self（也可以是别的名字，习惯使用self）
+
+    在构造方法中访问实例变量必须使用self.xxx的形式，只使用变量名访问的是形参中的变量
+
+    访问类变量使用类名.变量名或者self.\_\_class\_\_.变量名
+
+- 实例方法
+
+    定义在类中的方法，第一个参数必须是self，表示调用该方法的实例对象
+
+- 类方法
+
+    使用@classmethod注解
+
+    类和实例都可以调用类方法
+
+    类方法可以直接访问类变量
+
+    方法的第一个参数必须要指定，一般使用cls
+
+- 静态方法
+
+    使用@staticmethod注解
+
+    不需要指定第一个参数
+
+- - -
+
+### 类的继承
+
+#### 单继承
+```
+class Person(object):
+    def __init__(self,name,gender):
+        self.name = name
+        self.gender = gender
+    
+class Student(Person):
+    def __init__(self,name,gender,score):
+        # 调用父类构造方法
+        super(Student,self).__init__(name,gender)
+        self.score = score
+```
+#### 多重继承
+```
+class A(object):
+    def __init__(self, a):
+        print 'init A...'
+        self.a = a
+
+class B(A):
+    def __init__(self, a):
+        super(B, self).__init__(a)
+        print 'init B...'
+
+class C(A):
+    def __init__(self, a):
+        super(C, self).__init__(a)
+        print 'init C...'
+
+class D(B, C):
+    def __init__(self, a):
+        super(D, self).__init__(a)
+        print 'init D...'
+
+>>> d = D('d')
+init A...
+init C...
+init B...
+init D...
+```
+![multiple-inheritance.jpg](../images/python/multiple-inheritance.jpg "多重继承")
+
+- - -
+### 获取实例信息
+
+#### isinstance(instance,Class)
+
+判断实例是否属于该类
+
+#### type()
+
+返回Type对象，保存着变量的类型
+
+```
+>>> type(123)
+<type 'int'>
+
+>>> s = Student()
+>>> type(s)
+<class '__main__.Student'>
+```
+
+#### dir()
+
+获取变量的所有属性
+
+```
+>>> dir(123)   # 整数也有很多属性...
+['__abs__', '__add__', '__and__', '__class__', '__cmp__', ...]
+
+>>> s = Student()
+>>> dir(s)
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'gender', 'name', 'score', 'whoAmI']
+```
+
+#### getattr()
+
+```
+>>> s = Student('Bob')
+>>> getattr(s,'name')   
+# 获取name属性，如果属性不存在会报错
+'Bob'
+
+>>> getattr(s, 'age', 20)  
+# 获取age属性，如果属性不存在，就返回默认值20：
+20
+```
+
+#### setattr()
+```
+>>> setattr(s, 'name', 'Adam')  # 设置新的name属性
+```
+- - -
+### 定制类
+
+#### \_\_str\_\_
+
+类似于toString()，该方法显示给用户。
+
+#### \_\_repr\_\_
+
+类似与toString()，该方法显示给开发人员。
+
+#### \_\_cmp\_\_
+
+比较函数。定义实例排序的规则
+
+#### \_\_len\_\_
+
+#### \_\_int\_\_
+
+#### \_\_float\_\_
+
+#### @property
+
+```
+class Student(object):
+    def __init__(self, name, score):
+        self.name = name
+        self.__score = score
+
+    @property   # 相当于getter()
+    def score(self):
+        return self.__score
+
+    @score.setter   # 相当于setter()
+    def score(self, score):
+        if score < 0 or score > 100:
+            raise ValueError('invalid score')
+        self.__score = score
+
+>>> s = Student('Bob', 59)
+>>> s.score = 60
+>>> print s.score
+60
+>>> s.score = 1000
+Traceback (most recent call last):
+  ...
+ValueError: invalid score
+```
+
+#### \_\_slots\_\_
+
+限制当前类所拥有的属性
+
+#### \_\_call\_\_
+
+实现该方法可以将一个类实例变成一个可调用对象
+
+```
+class Fib(object):
+    def __call__(self,num):
+        a, b, L = 0, 1, []
+        for m in range(num):
+            L.append(a)
+            a, b = b, a + b
+        return L
+
+f = Fib()
+print f(10)
+```
+- - -
+## 正则表达式
+
+### 概括字符集
+
+- \d = [0-9]
+
+    匹配数字字符
+
+- \D = [^0-9]
+
+    匹配非数字字符
+
+- \w = [A-Za-z0-9_]
+
+    匹配单词字符
+
+- \W = [^A-Za-z0-9_]
+
+    匹配非单词字符
+
