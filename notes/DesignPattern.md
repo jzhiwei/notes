@@ -1,8 +1,7 @@
 # 设计模式
 
-### Builder Pattern
 
-### Singleton Pattern
+### Singleton
 
 ```
 # 第一种方式，直接创建实例对象
@@ -69,5 +68,101 @@ public class Singleton {
         return uniqueInstance;
             
     }
+}
+```
+```
+# 第五种方式，使用静态内部类的方式
+
+public class Singleton {
+
+    private Singleton() {}
+	
+	private static class SingletonHolder{
+		
+		private static final Singleton INSTANCE = new Singleton();
+	}
+	
+	public static Singleton getInstance() {
+		return SingletonHolder.INSTANCE;
+	}
+}
+```
+```
+# 第六种方式，使用枚举
+public enum Singleton {
+    
+    INSTANCE
+}
+```
+- - -
+### Strategy
+
+自定义的类可以通过实现Comparable接口的comparaTo()，来自定义比较规则，但是只能实现一种比较规则，如果要改变比较规则需要修改原来的代码，违反了开闭原则。
+
+例如学生类，有age和score属性，如果开始想通过年龄比较，后期又想通过score比较，就要实现Comparator接口来定义自己的比较器，在排序时传递比较器来进行比较。
+```
+public class Student{
+
+	String name;
+	int age;
+	int score;
+	
+	public Student() {}
+	public Student(String name, int age, int score) {
+		this.name = name;
+		this.age = age;
+		this.score = score;
+	}
+	
+	@Override
+	public String toString() {
+		return "[name: " + name + ", age:" + age + " ,score:" + score + "]";
+	}
+}
+```
+```
+//自定义的比较器类，通过学生的分数进行比较
+public class StudentScoreComparator implements Comparator<Student>{
+
+	@Override
+	public int compare(Student o1, Student o2) {
+		if(o1.score < o2.score) return -1;
+		else if(o1.score > o2.score) return 1;
+		return 0;
+	}
+	
+}
+```
+```
+//自定义的排序类，接收一个范型数组和一个比较器
+public class Sort {
+
+	//排序的方法
+	public static <T> void sorted(T[] arr, Comparator<T> comparator) {
+		for(int i = 0; i < arr.length - 1; i++) {
+			for(int j = 0; j < arr.length - i - 1; j++) {
+				if(comparator.compare(arr[j], arr[j+1]) == -1) {
+					T temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(arr));
+	}	
+}
+```
+```
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Student s1 = new Student("Bob",20,85);
+		Student s2 = new Student("Lucy",19,90);
+		Student s3 = new Student("Lilei",18,99);
+		Student s4 = new Student("Lily", 18, 59);
+		Student[] students = {s1,s2,s3,s4};
+		Sort.sorted(students, new StudentScoreComparator());
+	}
 }
 ```
