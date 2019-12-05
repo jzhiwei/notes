@@ -10,6 +10,9 @@
 	<!-- ![依赖关系.jpg](../images/uml/依赖关系.jpg "依赖关系") -->
 	<img src="https://github.com/jzhiwei/notes/blob/master/images/uml/%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB.jpg" width="351" height="133" />
 
+	<img src="https://github.com/jzhiwei/notes/blob/master/images/uml/%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB.jpg" width="702" height="266" />
+
+
 - 继承关系
 
 	类与类或接口与接口之间的关系，体现了一种is-a的关系
