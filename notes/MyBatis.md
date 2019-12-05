@@ -25,3 +25,23 @@ ${}
 使用<selectKey>
 - keyProperty: 指定返回的主键存储在对象中的哪个属性
 - order: 指定执行顺序。AFTER表示在插入语句之后执行
+
+
+### 全局配置文件
+
+```
+加载properties配置文件内容，property子标签会优先于resource执行
+<properties resource="xxx.properties">
+    <property name="db.username" value="root">
+</properties>
+```
+
+### 映射文件
+
+- resultType
+
+    与SQL语句的列名一致
+
+- resultMap
+
+    

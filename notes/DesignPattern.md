@@ -166,3 +166,20 @@ public class Main {
 	}
 }
 ```
+- - -
+### Factory
+
+#### SimpleFactory
+#### StaticFactory
+#### FactoryMethod
+#### AbstractFactory
+- - -
+### Facade
+
+- - -
+### Mediator
+
+- - -
+### Chain of Responsibility
+
+责任链模式，典型实现是Filter
