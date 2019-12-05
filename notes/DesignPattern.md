@@ -8,10 +8,6 @@
 	依赖关系可以是方法参数的依赖，返回值的依赖，还可以是代码中的直接依赖。
 
 	![依赖关系.jpg](../images/uml/依赖关系.jpg "依赖关系")
-	
-	<img src="https://github.com/jzhiwei/notes/blob/master/images/uml/%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB.jpg" width="351" height="133" />
-
-	<img src="https://github.com/jzhiwei/notes/blob/master/images/uml/%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB.jpg" width="702" height="266" />
 
 
 - 继承关系
