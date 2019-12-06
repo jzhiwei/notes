@@ -14,21 +14,31 @@
 
 	类与类或接口与接口之间的关系，体现了一种is-a的关系
 
+	![继承关系.jpg](../images/uml/继承关系.jpg "继承关系")
+
 - 实现关系
 
 	类与接口之间的关系
+
+	![实现关系.jpg](../images/uml/实现关系.jpg "实现关系")
 
 - 关联关系
 
 	体现的是两个类或类与接口之间语义级别的强依赖关系，比如班级与学生。这种关系比依赖更强。
 
+	![关联关系.jpg](../images/uml/关联关系.jpg "关联关系")
+
 - 聚合关系
 
 	是关联关系的一种特例，体现的语义是整体与部分的拥有关系，即has-a的关系，此时整体与部分之间是可分离的，它们可以具有各自的生命周期，属于多个整体对象，也可以为多个整体对象共享。
 
+	![聚合关系.jpg](../images/uml/聚合关系.jpg "聚合关系")
+
 - 组合关系
 
 	是关联关系的一种特例，体现的语义是一种包含关系，即contains-a。这种关系比聚合更强，也称强聚合。同样体现整体与部分间的关系，此时整体与部分是不可分的，整体的生命周期结束也意味着部分的生命周期结束。
+
+	![组合关系.jpg](../images/uml/组合关系.jpg "组合关系")
 
 
 # 设计模式
@@ -202,10 +212,39 @@ public class Main {
 - - -
 ### Factory
 
-#### SimpleFactory
-#### StaticFactory
+#### SimpleFactory/StaticFactory
+
+调用工厂类中的静态方法，通过传递参数来决定所创建的对象类型。
+
+![简单工厂模式类图.jpg](../images/designpattern/简单工厂模式类图.jpg "简单工厂模式类图")
+
+
 #### FactoryMethod
+
+对工厂类也进行了抽象，使用特定类型的工厂类来创建特定类型的对象。
+
+针对每一种类型的对象，都会有一个专门的工厂类
+
+![工厂方法模式类图.jpg](../images/designpattern/工厂方法模式类图.jpg "工厂方法模式类图")
+
 #### AbstractFactory
+
+抽象工厂是工厂方法的扩展。可以通过抽象工厂来创建产品族。
+
+例如各个操作系统下GUI中的按钮和单选框等组件，功能相同，外观不同，这种情况可以使用抽象工厂来实现
+
+	抽象工厂（Component Factory）：工厂的抽象类
+
+	具体工厂（Concrete Factory）：工厂具体实现类，例如WindowsComponentFactory和MotifComponentFactory
+
+	抽象产品（Abstract Product）：Button、Radio
+
+	具体产品（Concrete Product）：WindowsButton、WindowsRadio、MotifButton、MotifRadio
+
+![抽象工厂模式类图.jpg](../images/designpattern/抽象工厂模式类图.jpg "抽象工厂模式类图")
+
+
+
 - - -
 ### Facade
 
