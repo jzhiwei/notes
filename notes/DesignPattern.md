@@ -212,7 +212,7 @@ public class Main {
 - - -
 ### Factory
 
-#### SimpleFactory/StaticFactory
+#### SimpleFactory / StaticFactory
 
 调用工厂类中的静态方法，通过传递参数来决定所创建的对象类型。
 
@@ -243,7 +243,17 @@ public class Main {
 
 ![抽象工厂模式类图.jpg](../images/designpattern/抽象工厂模式类图.jpg "抽象工厂模式类图")
 
+#### BuilderFactory
 
+主要用于分步骤构建一个复杂对象，分步骤是一个稳定的算法，复杂对象的各个部分经常变化
+
+	抽象建造者角色（Builder）：给出一个抽象接口，表示对象的各个组成成分的建造。
+
+	具体建造者角色（Concrete Builder）：创建并提供产品实例
+
+	指导者角色（Director）：指导特定的具体建造者对象进行创建的过程
+
+	产品角色：建造过程中的复杂对象。
 
 - - -
 ### Facade
