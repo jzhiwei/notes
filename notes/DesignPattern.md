@@ -1,5 +1,18 @@
 # UML(Unified Modeling Language)
 
+### [UML中的关系](#UML中的关系)
+### [设计模式](#设计模式)
+- [Singleton](#Singleton)
+- [Strategy](#Strategy)
+- [Factory](#Factory)
+	- [SimpleFactory(StaticFactory)](#SimpleFactory(StaticFactory))
+	- [FactoryMethod](#FactoryMethod)
+	- [AbstractFactory](#AbstractFactory)
+	- [BuilderFactory](#BuilderFactory)
+- [Facade](#Facade)
+- [Mediator](#Mediator)
+- [Chain of Responsibility](#Chain%20of%20Responsibility)
+
 ### UML中的关系
 - 依赖关系
 
@@ -212,7 +225,7 @@ public class Main {
 - - -
 ### Factory
 
-#### SimpleFactory / StaticFactory
+#### SimpleFactory(StaticFactory)
 
 调用工厂类中的静态方法，通过传递参数来决定所创建的对象类型。
 
