@@ -68,7 +68,8 @@
         depress [dɪˈpres] vt. 压抑；使沮丧；使萧条
         depressed [dɪˈprest] adj. 沮丧的；萧条的；压低的 v. 使沮丧；使萧条（depress的过去式和过去分词形式）；压低
         press [pres] v. 压；按；逼迫；紧抱；（向……）拥挤；重压，压平；榨取；坚持；推进；征用；强征……入伍；（举重）推举；（高尔夫）过猛击球 n. 报刊杂志；榨汁机；印刷机；新闻界；出版社；按；压；拥挤的人群；（篮球）紧逼；（举重）推举；（壁柜式的）书柜；（海军的）强行征兵
-        pressure [ˈpreʃə(r)] n. 压力；压迫，[物] 压强 vt. 迫使；密封；使……增压
+     
+- - -
 
 - con-：一起，表加强
 
@@ -178,6 +179,8 @@
         voice [vɔɪs] n. 声音；嗓音；发言权；愿望 vt. 表达；吐露
         advocate ['ædvəkeɪt；-ət] v. 提倡，拥护；为……辩护 n. 拥护者；辩护者；辩护律师，出庭律师；律师；为（某团体）谋利益者
 
+- - -
+
 - col-：（前缀com-在字母l前同化形式）
 
     collate [kəˈleɪt] vt. 核对，校对；校勘   
@@ -209,6 +212,8 @@
         colloquy [ˈkɒləkwi] n. 以对话体写的文章；谈话，会话
         loquacious [ləˈkweɪʃəs] adj. 饶舌的，多话的
         grandiloquent [ɡrænˈdɪləkwənt] adj. 夸张的；夸大的；大言不惭的
+
+- - -
 
 - cor-：（前缀com-在字母r前同化形式）
 
@@ -243,6 +248,8 @@
         corruption [kəˈrʌpʃn] n. 贪污，腐败；堕落
         bankrupt [ˈbæŋkrʌpt] adj. 破产的 vt. 使破产 n. [经] 破产者
         rupture [ˈrʌptʃə(r)] n. 破裂；决裂；疝气 vi. 破裂；发疝气 vt. 使破裂；断绝；发生疝
+
+- - -
 
 - co-：（前缀com-在元音、字母h以及gn前等缩写形式）
 
@@ -305,6 +312,8 @@
         oust [aʊst] vt. 驱逐；剥夺；取代
         stand [stænd] vi. 站立；位于；停滞 vt. 使站立；忍受；抵抗 n. 站立；立场；看台；停止
 
+- - -
+
 - coun-：（前缀con-拼写变体）
 
     council [ˈkaʊnsl] n. 委员会；会议；理事会；地方议会；顾问班子   
@@ -319,6 +328,8 @@
         counselor ['kaʊnsələ] n. 顾问；法律顾问；参事（等于counsellor）
         consult [kənˈsʌlt] vt. 查阅；商量；向…请教 vi. 请教；商议；当顾问
         consultant [kənˈsʌltənt] n. 顾问；咨询者；会诊医生
+
+- - -
 
 - 其他
 

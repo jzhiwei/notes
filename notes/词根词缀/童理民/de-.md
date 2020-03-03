@@ -35,6 +35,8 @@
         sidereal [saɪˈdɪəriəl] adj. 恒星的，星座的
         consider [kənˈsɪdə(r)] vt. 考虑；认为；考虑到；细想 vi. 考虑；认为；细想
 
+- - -
+
 - de-：向下
 
     decide [dɪˈsaɪd] vt. 决定；解决；判决 vi. 决定，下决心   
@@ -74,6 +76,8 @@
         testify [ˈtestɪfaɪ] vt. 证明，证实；作证 vi. 作证；证明
         testimony [ˈtestɪməni] n. [法] 证词，证言；证据
 
+- - -
+
 - de-：离开
 
     defend [dɪˈfend] vt. 辩护；防护 vi. 保卫；防守   
@@ -95,6 +99,8 @@
         departed [dɪˈpɑːtɪd] adj. 已故的；过去的，以往的 n. 死者 v. 离去，去世（depart 的过去式和过去分词）
         department [dɪˈpɑːtmənt] n. 部；部门；系；科；局
 
+- - -
+
 - de-：表相反
 
     decompress [ˌdiːkəmˈpres] vt. 使减压，使解除压力 vi. 减压
@@ -110,6 +116,8 @@
         detachment [dɪˈtætʃmənt] n. 分离，拆开；超然；分遣；分遣队
         attach [əˈtætʃ] vt. 使依附；贴上；系上；使依恋 vi. 附加；附属；伴随
         attachment [əˈtætʃmənt] n. 附件；依恋；连接物；扣押财产
+
+- - -
 
 - de-：除去
 
@@ -127,6 +135,8 @@
 
         humid [ˈhjuːmɪd] adj. 潮湿的；湿润的；多湿气的
         humidify [hjʊ'mɪdɪfaɪ] vt. 使潮湿；使湿润
+
+- - -
 
 - de-：表完全，表整个，表加强，表强调
 
@@ -158,6 +168,8 @@
         clarify [ˈklærəfaɪ] vt. 澄清；阐明 vi. 得到澄清；变得明晰；得到净化
         clear [klɪə(r)] adj. 清楚的；清澈的；晴朗的；无罪的 vt. 通过；清除；使干净；跳过 vi. 放晴；变清澈 adv. 清晰地；完全地 n. 清除；空隙
         clearance [ˈklɪərəns] n. 清除；（货物的）清仓甩卖；空隙；准许；（飞机起降的）许可；（支票）过户，结算；（足球比赛中）解围
+
+- - -
 
 - de-：分开，散开（前缀dis-进入古法语拼写变体）
 

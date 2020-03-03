@@ -151,6 +151,8 @@
         vocabulary [vəˈkæbjələri] n. 词汇；词表；词汇量
         voice [vɔɪs] n. 声音；嗓音；发言权；愿望 vt. 表达；吐露
 
+- - -
+
 - ab-：（前缀ad-在字母b前同化形式）
 
     abbreviate [əˈbriːvieɪt] vt. 缩写，使省略；使简短 vi. 使用缩写词   
@@ -159,6 +161,8 @@
         abbreviation [əˌbriːviˈeɪʃn] n. 缩写；缩写词
         brevity [ˈbrevəti] n. 简洁，简短；短暂，短促
         brief [briːf] adj. 简短的，简洁的；短暂的，草率的 n. 摘要，简报；概要，诉书 vt. 简报，摘要；作…的提要
+
+- - -
 
 - ac-：（前缀ad-在字母c、k和qu前同化形式）
 
@@ -221,6 +225,8 @@
         query [ˈkwɪəri] n. 疑问，质问；疑问号 ；[计] 查询 vt. 询问；对……表示疑问 vi. 询问；表示怀疑
         question [ˈkwestʃən] n. 问题，疑问；询问；疑问句 vt. 询问；怀疑；审问 vi. 询问；怀疑；审问
 
+- - -
+
 - af-：（前缀ad-在字母f前同化形式）
 
     affect [əˈfekt] vt. 影响；感染；感动；假装 vi. 倾向；喜欢 n. 情感；引起感情的因素   
@@ -251,6 +257,8 @@
         prefix [ˈpriːfɪks] n. 前缀 vt. 加前缀；将某事物加在前面
         suffix [ˈsʌfɪks] n. 后缀，词尾 v. 添后缀
 
+- - -
+
 - ag-：（前缀ad-在字母g前同化形式）
 
     aggrandize [ə'grændaɪz] vt. 增加；夸大；强化   
@@ -275,6 +283,8 @@
         congress [ˈkɒŋɡres] n. 国会；代表大会；会议；社交
         progress [ˈprəʊɡres] n. 进步，发展；前进 vi. 前进，进步；进行
 
+- - -
+
 - al-：（前缀ad-在字母l前同化形式）
 
     ally [ˈælaɪ] n. 同盟国；伙伴；同盟者；助手 vt. 使联盟；使联合 vi. 联合；结盟   
@@ -297,6 +307,8 @@
         allotment [əˈlɒtmənt] n. 分配；分配物；养家费；命运
         lot [lɒt] n. 份额；许多；命运；阄 adv. （与形容词和副词连用）很，非常；（与动词连用）非常 pron. 大量，许多 vt. 分组，把…划分（常与out连用）；把（土地）划分成块 vi. 抽签，拈阄
         parking lot n. 停车场
+
+- - -
 
 - an-：（前缀ad-在字母n前同化形式）
 
@@ -321,6 +333,8 @@
         connote [kəˈnəʊt] vt. 意味着；含言外之意
         denote [dɪˈnəʊt] vt. 表示，指示
         note [nəʊt] n. 笔记；音符；票据；注解；纸币；便笺；照会；调子 vt. 注意；记录；注解
+
+- - -
 
 - ap-：（前缀ad-在字母p前同化形式）
 
@@ -354,6 +368,8 @@
         disapprove [ˌdɪsəˈpruːv] vt. 不赞成；不同意 vi. 不赞成；不喜欢
         proof [pruːf] n. 证明；证据；校样；考验；验证；试验 adj. 防…的；不能透入的；证明用的；耐…的 vt. 试验；校对；使不被穿透
 
+- - -
+
 - ar-：（前缀ad-在字母r前同化形式）
 
     arrest [əˈrest] v. 逮捕；（司法机关）扣留（船只）；阻止；吸引；心跳停止，心脏病发作； n. 逮捕，监禁； 停止，中止   
@@ -376,6 +392,8 @@
 
         arranged marriage 家庭包办婚姻
         deranged [dɪˈreɪndʒd] adj. 疯狂的；精神错乱的
+
+- - -
 
 - as：（前缀ad-在字母s前同化形式）
 
@@ -405,6 +423,8 @@
         persist [pəˈsɪst] vi. 存留，坚持；持续，固执 vt. 坚持说，反复说
         subsist [səbˈsɪst] vi. 存在；维持生活 vt. 供养
 
+- - -
+
 - at-：（前缀ad-在字母t前同化形式）
 
     attend [əˈtend] vt. 出席；上（大学等）；照料；招待；陪伴 vi. 出席；致力于；照料；照顾   
@@ -429,6 +449,8 @@
 
         detract [dɪˈtrækt] vt. 转移，使分心 vi. 贬低；减去
         distract [dɪˈstrækt] vt. 转移；分心
+
+- - -
 
 - a-：（前缀ad-在-sc、-sp和-st前脱落形式）
 
@@ -474,6 +496,8 @@
         astringency [əˈstrɪndʒənsi] n. 收敛性；严酷，严峻
         astringent [əˈstrɪndʒənt] adj. 涩的；收敛性的；止血的；严厉的 n. [药] 收敛剂；止血药
         strict [strɪkt] adj. 严格的；绝对的；精确的；详细的
+
+- - -
 
 - a-：（前缀ad-进入古法语脱落形式）
 
@@ -545,6 +569,8 @@
         verify [ˈverɪfaɪ] vt. 核实；查证
         verification [ˌverɪfɪˈkeɪʃn] n. 确认，查证；核实
         verisimilitude [ˌverɪsɪˈmɪlɪtjuːd] n. 逼真，貌似真实；逼真的事物
+
+- - -
 
 - 其他
 
