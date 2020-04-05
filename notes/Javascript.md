@@ -165,7 +165,59 @@
 
 - Array
 
+- - -
+### DOM
 
+- event.screenX
+
+	鼠标距离屏幕左边的距离（针对整个屏幕，而不是浏览器）
+
+- event.screenY
+
+	鼠标距离屏幕上边的距离
+
+- event.clientX
+
+	鼠标距离浏览器视窗左边的距离（不包括水平滚动条距离）
+
+- event.clientY
+
+	鼠标距离浏览器视窗上边的距离（不包括工具栏，不包括垂直滚动条距离）
+
+- event.pageX
+
+	鼠标距离浏览器视窗左边的距离（包括水平滚动条的距离）
+
+- event.pageY
+
+	鼠标距离浏览器视窗上边的距离（包括垂直滚动条的距离）
+
+- element.offsetLeft
+
+	该元素距离其父元素左边框的距离
+
+- 获取元素的 float 属性
+
+	```
+	element.style.float
+	element.style.cssFloat	//FireFox
+	element.style.styleFloat	//IE
+
+	#兼容写法
+	element.style["cssFloat" in this.style ? "cssFloat" : "styleFloat"] = "left";
+	```
+
+- 获取元素在CSS中设置的属性值
+
+	```
+	获取元素的 display 值
+	element.currentStyle.display;	//IE
+	window.getComputedStyle(element, null).getPropertyValue("display");
+	window.getComputedStyle(element, null).display;
+	```
+
+
+- - -
 
 	
 		
@@ -183,6 +235,7 @@
 	- toLocalString(): 返回对象的字符串表示。该字符串与执行环境的地区对应；
 	- toString(): 返回对象的字符串表示；
 	- valueOf(): 返回对象的字符串、数值或布尔表示；
+
 ### Global对象
 global是一个全局对象（实际是不存在的），global中的常用方法
 - encodeURI(): 对url进行编码，只会转换一些特殊的字符，如空格；
@@ -195,13 +248,16 @@ global是一个全局对象（实际是不存在的），global中的常用方�
 - escape(): 对中文进行编码
 - unescape(): 解码
 - isNaN(): 
+
 ### 原型对象
 在js中每一个函数都有一个prototype属性，该属性就是函数的原型对象，原型对象的constructor方法指向该函数对象；
 每个实例对象都有一个隐式原型原型属性__proto__，指向了构造函数的原型对象，即
+
 function Foo(){}
 function Function(){}
 function Object(){}
 var foo = new Foo();
+
 1. foo.__proto__ === Foo.prototype；
 原型对象也是一个对象， 是通过Object对象的构造方法创建的，即
 2. Foo.prototype.__proto__ === Object.prototype；
