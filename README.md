@@ -1,33 +1,38 @@
-# notes
+# 学习笔记
 
-My study notes.
+记录了学习过程中的一些重要知识点，方便以后回顾。
 
 - - -
-### 计算机相关笔记
-- [Linux](./notes/Linux.md)
-- [Python](./notes/Python.md)
-- [Java](./notes/Java.md)
-- [Spring](./notes/Spring.md)
-- [MyBatis](./notes/MyBatis.md)
-- [XML](./notes/XML.md)
-- [Hadoop](./notes/Hadoop.md)
-- [DesignPattern](./notes/DesignPattern.md)
-- [计算机原理](./notes/计算机原理.md)
-- [数据结构和算法](./notes/数据结构和算法.md)
-- [HTML CSS](./notes/HTMLCSS.md)
 
-### 读书笔记
-- [如何阅读一本书](./notes/books/如何阅读一本书.md)
-- [精通正则表达式](./notes/books/精通正则表达式.md)
-- [认识电影](./notes/books/认识电影.md)
-- [Think in Java](./notes/books/ThinkInJava.md)
+### 前端
+- [HTML CSS](./frontend/HTML&CSS.md)
+- [JavaScript](./frontend/JavaScript.md)
+- [React](./frontend/React.md)
+
+
+### 后端
+
 - 汇编语言
-    - [汇编语言](./notes/books/汇编语言/汇编语言.md)
-    - [习题及实验](./notes/books/汇编语言/习题及实验.md)
+    - [汇编语言](./backend/汇编语言/汇编语言.md)
+    - [习题及实验](./backend/汇编语言/习题及实验.md)
+- [计算机原理](./backend/计算机原理.md)
+- [数据结构和算法](./backend/数据结构和算法.md)
+- [DesignPattern](./backend/DesignPattern.md)
+- [Hadoop](./backend/Hadoop.md)
+- [Java](./backend/Java.md)
+- [Linux](./backend/Linux.md)
+- [MyBatis](./backend/MyBatis.md)
+- [Python](./backend/Python.md)
+- [Spring](./backend/Spring.md)
+- [SpringBoot](./backend/SpringBoot.md)
+- [XML](./backend/XML.md)
 
-### 其他
-- [数学](./notes/数学.md)
-- [英语](./notes/英语.md)
+- [《精通正则表达式》](./backend/精通正则表达式.md)
+- [《The Java Programming Language》](./backend/TheJavaProgrammingLanguage.md)
+- [《Think in Java》](./backend/ThinkinJava.md)
+
+
+
 
 
 
