@@ -1,9 +1,9 @@
 ### ag,act [L] = to do, to drive 做，驱使
 
     agent [ˈeɪdʒənt] [ag:做 + -ent: n. 人] -> 办事者 -> n. 代理人；代理商
-    agential [agent + -ial a.] a. 代理人的；起媒介作用的
+    agential [eɪ'dʒenʃəl] [agent + -ial a.] a. 代理人的；起媒介作用的
 
-    agency [ˈeɪdʒənsi] [ag:做 + -ency n. 表性质或状态] -> 办事的能力或场所 -> ① n. 力量；作用 ② n. 代理处；机构
+    agency [ˈeɪdʒənsi] [ag:做 + -ency n. 表性质或状态] -> 办事的能力或场所 -> n. ① 力量；作用 ② 代理处；机构
 
     agenda [əˈdʒendə] [ag:做 + -enda(-a表复数) n. 事情] -> 要做的事情 -> n. 议事日程
 
