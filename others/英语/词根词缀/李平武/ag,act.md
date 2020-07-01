@@ -1,0 +1,58 @@
+### ag,act [L] = to do, to drive 做，驱使
+
+    agent [ˈeɪdʒənt] [ag:做 + -ent: n. 人] -> 办事者 -> n. 代理人；代理商
+    agential [agent + -ial a.] a. 代理人的；起媒介作用的
+
+    agency [ˈeɪdʒənsi] [ag:做 + -ency n. 表性质或状态] -> 办事的能力或场所 -> ① n. 力量；作用 ② n. 代理处；机构
+
+    agenda [əˈdʒendə] [ag:做 + -enda(-a表复数) n. 事情] -> 要做的事情 -> n. 议事日程
+
+    agile [ˈædʒaɪl] [ag:做 + -ile a. 能……的] -> 能干的 -> a. 敏捷的；灵活的
+
+    agitate [ˈædʒɪteɪt] [ag:驱使 + -itate(-ate) v. 使……] -> 引起不断的动荡 -> v. 鼓动
+    agitation [ˌædʒɪˈteɪʃn] [agitat(e) + -ion n.] n. 鼓动；激动不安
+    agitator [ˈædʒɪteɪtə(r)] [agitat(e) + -or n.] n. 鼓动者
+
+
+    act [ækt] [act:做] -> v. ① 行动 ② 起作用 ③ 扮演 
+    actor [ˈæktə(r)] [act + -or n.] n. 男演员；行动者
+    actress [ˈæktrəs] [act(o)r + -ess n.] n. 女演员
+    re-act [ri:'ækt] [re- + act v.] v. 重做，再做；重演，开演
+    overact [ˌəʊvərˈækt] [over- + act v.] v. 演得过于夸张
+
+    action [ˈækʃn] [act:做 + -ion:表过程或结果] n. ① 行动，活动 ② 作用 ③ 诉讼
+    actionable [ˈækʃənəbl] [action + -able a.] a. 可控诉的
+
+    active [ˈæktɪv] [act:做 + -ive a. 会……的] -> 活跃的，积极的
+    activate [ˈæktɪveɪt] [activ(e) + -ate v.] v. 使活动 
+    activism [ˈæktɪvɪzəm] [activ(e) + -ism n.] n. [哲]能动主义；积极，活跃
+    activist [ˈæktɪvɪst] [activ(e) + -ist n.] n. 活动分子，积极分子
+    activity [ækˈtɪvəti] [activ(e) + -ity n.] n. 能动性；活跃；[复]活动
+
+    actual [ˈæktʃuəl] [act:做 + -u- + -al a. 表行为或事实] -> a. 实际的；现实的
+    actualist ['æktʃʊəlɪst] [actual + -ist n.] n. 现实主义者
+    actuality [ˌæktʃuˈæləti] [actual + -ity n.] n. 事实，显存情况；现实性
+    actualize [ˈæktʃuəlaɪz] [actual + -ize v.] v. 实行，使现实化
+
+    actuate [ˈæktʃueɪt] [act:做 + -u- + -ate v. 使……] v. 驱动，激励
+    actuation [,æktjʊ'eɪʃən] [actuat(e) + -ion n.] n. 驱动，激励；开动
+
+    exact [ɪɡˈzækt] [ex-: 出 + act:驱使] -> 逼出来 -> ① v. 强求，索取 ② a. 准确的，精确的
+    exacting [ɪɡˈzæktɪŋ] [exact v. + -ing a.] a. 苛求的，严厉的；强索的
+    exaction [ɪɡˈzækʃn] [exact v. + -ion n.] n. 强索；勒索；榨取
+    exactitude [ɪɡˈzæktɪtjuːd] [exact a. + -itude n.] n. 精确性；严格，严谨
+
+    react [riˈækt] [re-: 回返 + act:做] -> v. ① 反应 ② 反动，反作用
+    reaction [riˈækʃn] [react + -ion n.] n. 反应；反作用；反动
+    reactor [riˈæktə(r)] [react + -or n.] n. 引起反应的人或物；[原]反应堆
+    reactive [riˈæktɪv] [react + -ive a.] a. 反应的；反动的
+
+    interact [ˌɪntərˈækt] [inter-: 在……之间 + act: 做] -> 在两者之间互动 -> v. 互相作用，互相影响
+    interaction [ˌɪntərˈækʃn] [interact + -ion n.] n. 相互作用；相互
+    interactant [,ɪntər'æktənt] [interact + -ant n.] n. [化]反应物
+    interactive [ˌɪntərˈæktɪv] [interact + -ive a.] a. 互相作用的；[计]交互的
+
+    transact [trænˈzækt] [trans-: 穿过 + act: 驱使] -> 使通过 -> v. 执行，办理
+    transaction [trænˈzækʃn] [transact + -ion n.] n. 办理，处理；交易，业务
+    transactor [træn'zæktə] [transact + -or n.] n. 办事人，处理者
+    
